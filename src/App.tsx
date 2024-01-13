@@ -34,7 +34,7 @@ const App = () => {
           onClick={() => navigate("/projects")}
           style={{ cursor: "pointer" }}
         >
-          ADN
+          ADNAAAAAAA
         </Title>
       </Container>
 
