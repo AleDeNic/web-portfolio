@@ -22,36 +22,31 @@ const App = () => {
 
   return (
     <>
-      <Container
-        fluid
-        bg={"#ffffff"}
-        w={"100%"}
-        h={"10vh"}
-        mb={rem(0)}
-        style={{ borderRadius: rem(0) }}
-      >
+      <Container fluid bg={"#ffffff"} w={"100%"}>
         <Tooltip.Floating label="Home" radius={rem(50)}>
           <Title
             onClick={() => navigate("/projects")}
-            style={{ cursor: "pointer" }}
-            ta={"center"}
-            order={1}
-            pt={rem(22)}
-            style={{ cursor: "none" }}
+            style={{
+              cursor: "none",
+              textAlign: "right",
+              display: "flex",
+              alignItems: "right",
+              justifyContent: "center",
+              height: rem(93),
+              paddingTop: rem(0),
+            }}
+            //ta={"center"}
+            //order={1}
+            //h={rem(100)}
+            //pt={rem(0)}
+            //style={{ cursor: "none" }}
           >
             ADN
           </Title>
         </Tooltip.Floating>
       </Container>
 
-      <Container
-        fluid
-        w={"1920px"}
-        bg={"#ffffff"}
-        padding={"0px"}
-        //p={rem(150)}
-        //style={{ borderRadius: rem(5) }}
-      >
+      <Container fluid w={"120rem"} bg={"#ffffff"} p={0}>
         <Outlet />
       </Container>
     </>

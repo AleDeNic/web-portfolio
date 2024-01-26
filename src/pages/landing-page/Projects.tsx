@@ -1,4 +1,11 @@
-import { Image, rem, Tooltip, SimpleGrid, ScrollArea } from "@mantine/core";
+import {
+  Image,
+  rem,
+  Tooltip,
+  SimpleGrid,
+  Grid,
+  ScrollArea,
+} from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 import { projects } from "../../utils/projects.ts";
 
@@ -7,13 +14,14 @@ const Projects = () => {
 
   return (
     <ScrollArea h={"90vh"}>
-      <SimpleGrid cols={1}>
+      <Grid gutter={rem(0)}>
         {projects.map((project) => (
-          <div
+          <Grid.Col
+            span={12}
             key={project.image}
             style={{
               height: rem(400),
-              backgroundColor: "red",
+              backgroundColor: "#ffffff",
             }}
           >
             <Tooltip.Floating
@@ -29,9 +37,9 @@ const Projects = () => {
                 style={{ cursor: "none" }}
               />
             </Tooltip.Floating>
-          </div>
+          </Grid.Col>
         ))}
-      </SimpleGrid>
+      </Grid>
     </ScrollArea>
   );
 };

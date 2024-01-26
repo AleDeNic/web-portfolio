@@ -19,8 +19,8 @@ import {
  */
 const Habitomori = () => {
   return (
-    <Grid>
-      <Grid.Col span={4}>
+    <Grid p={0} gutter={0}>
+      <Grid.Col span={4} pr={rem(50)}>
         <Flex direction={"column"} pl={rem(20)}>
           <Title align={"left"} pb={rem(50)}>
             Habitomori
