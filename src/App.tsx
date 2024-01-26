@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, rem, Title } from "@mantine/core";
+import { Container, rem, Text, Tooltip } from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -23,23 +23,36 @@ const App = () => {
   return (
     <>
       <Container
+        fluid
         bg={"gray"}
         w={"100%"}
-        mb={rem(5)}
-        style={{ borderRadius: rem(5) }}
+        h={rem(80)}
+        mb={rem(0)}
+        style={{ borderRadius: rem(0) }}
       >
-        <Title
-          p={rem(5)}
-          ta={"left"}
-          onClick={() => navigate("/projects")}
-          style={{ cursor: "pointer" }}
-        >
-          ADNAAAAAAA
-        </Title>
+        <Tooltip.Floating label="The Witness 3" radius={rem(50)}>
+          <Text
+            onClick={() => navigate("/projects")}
+            style={{ cursor: "pointer" }}
+            ta={"left"}
+          >
+            ADN
+          </Text>
+        </Tooltip.Floating>
       </Container>
 
-      <Container bg={"#eeeeee"} p={rem(15)} style={{ borderRadius: rem(5) }}>
+      <Container
+        fluid
+        w={"1920px"}
+        bg={"#f34d56"}
+        // p={rem(150)}
+        // style={{ borderRadius: rem(5) }}
+      >
         <Outlet />
+      </Container>
+
+      <Container>
+        <Text>aaaaaaaaa</Text>
       </Container>
     </>
   );
