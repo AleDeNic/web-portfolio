@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <>
-      <Group bg={"#ffffff"} justify={"space-between"} px={rem(20)} w={rem(500)}>
+      <Group bg={"#ffffff"} justify={"space-between"} px={"10vw"} w={rem(500)}>
         <Tooltip.Floating label="HOME" radius={rem(50)}>
           <Image
             onClick={() => navigate("/projects")}

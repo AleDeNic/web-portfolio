@@ -13,7 +13,7 @@ import {
 } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 import { projects } from "../../utils/projects.ts";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
 
 const Projects = () => {
@@ -23,22 +23,73 @@ const Projects = () => {
   const scrollToTop = () =>
     viewport.current!.scrollTo({ top: 0, behavior: "smooth" });
 
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
+  const [timeoutId, setTimeoutId] = useState<number | null>(null);
+
+  const handleMouseEnter = () => {
+    // Set a delay before opening the collapse
+    const id = setTimeout(() => {
+      open();
+    }, 100); // 100 milliseconds
+
+    // Store the timeout ID for later use
+    setTimeoutId(id);
+  };
+
+  const handleMouseLeave = () => {
+    // Clear any existing timeout
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+
+    // Set a delay before closing the collapse
+    const id = setTimeout(() => {
+      close();
+    }, 100); // 100 milliseconds
+
+    // Store the timeout ID for later use
+    setTimeoutId(id);
+  };
+
+  const handleTextMouseEnter = () => {
+    // Prevent collapse when mouse enters the text
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+  };
+
+  const handleTextMouseLeave = () => {
+    // Clear any existing timeout
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+
+    // Set a delay before closing the collapse
+    const id = setTimeout(() => {
+      close();
+    }, 200); // 100 milliseconds
+
+    // Store the timeout ID for later use
+    setTimeoutId(id);
+  };
 
   return (
     <Box>
-      <Container fluid>
-        <Group justify="left" mb={"2vh"} w={"100%"}>
-          <Button
-            onClick={toggle}
-            variant={"transparent"}
-            color={"#000000"}
-            size={"xl"}
-          >
-            Alessio De Nicolò
-          </Button>
+      <Container fluid px={"10vw"}>
+        <Group
+          justify="left"
+          mb={"2vh"}
+          w={"100%"}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Text>ALESSIO DE NICOLÒ</Text>
         </Group>
-        <Collapse in={opened}>
+        <Collapse
+          in={opened}
+          onMouseEnter={handleTextMouseEnter}
+          onMouseLeave={handleTextMouseLeave}
+        >
           <Text style={{ textAlign: "left" }} w={"30%"} pb={"5vh"}>
             Hi! I’m a communication design student at PoliMI. Some years ago I
             approached design by realizing that all my passions were powered by
@@ -81,13 +132,24 @@ const Projects = () => {
           ))}
         </Grid>
         <Container p={rem(20)}>
-          <Button
-            onClick={scrollToTop}
-            style={{ color: "#000000", backgroundColor: "#ffffff" }}
-            size={"xl"}
+          <Tooltip.Floating
+            label={"TO THE TOP"}
+            radius={rem(24)}
+            color={"#000000"}
           >
-            ↑
-          </Button>
+            <Button
+              onClick={scrollToTop}
+              style={{
+                color: "#000000",
+                backgroundColor: "#ffffff",
+                cursor: "none",
+                height: "100%",
+              }}
+              size={"xl"}
+            >
+              ↑
+            </Button>
+          </Tooltip.Floating>
         </Container>
       </ScrollArea>
     </Box>

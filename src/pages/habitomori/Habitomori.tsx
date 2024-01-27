@@ -46,9 +46,9 @@ const Habitomori = () => {
   ));
 
   return (
-    <Grid p={0} gutter={0}>
-      <Grid.Col span={4} pr={rem(100)}>
-        <Flex direction={"column"} pl={rem(20)}>
+    <Grid px={"10vw"} gutter={0}>
+      <Grid.Col span={4}>
+        <Flex direction={"column"}>
           <Title
             ta={"left"}
             pb={rem(50)}
@@ -74,7 +74,7 @@ const Habitomori = () => {
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>
       </Grid.Col>
-      <Grid.Col span={8}>
+      <Grid.Col span={8} pl={"5vw"}>
         <ScrollArea h={"90vh"} type={"never"}>
           <Tooltip.Floating label={"SCROLL"} radius={rem(24)} color={"#9880ff"}>
             <Grid p={0} style={{ cursor: "none" }}>
