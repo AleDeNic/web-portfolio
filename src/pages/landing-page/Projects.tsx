@@ -1,11 +1,4 @@
-import {
-  Image,
-  rem,
-  Tooltip,
-  SimpleGrid,
-  Grid,
-  ScrollArea,
-} from "@mantine/core";
+import { Image, rem, Tooltip, Grid, ScrollArea } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 import { projects } from "../../utils/projects.ts";
 
@@ -20,7 +13,7 @@ const Projects = () => {
             span={12}
             key={project.image}
             style={{
-              height: rem(400),
+              height: "40vh",
               backgroundColor: "#ffffff",
             }}
           >

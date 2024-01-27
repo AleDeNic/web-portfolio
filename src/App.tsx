@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, Image, rem, Text, Tooltip, Title } from "@mantine/core";
+import { Container, rem, Tooltip, Title } from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -28,25 +28,19 @@ const App = () => {
             onClick={() => navigate("/projects")}
             style={{
               cursor: "none",
-              textAlign: "right",
               display: "flex",
-              alignItems: "right",
               justifyContent: "center",
-              height: rem(93),
+              alignItems: "center",
+              height: "10vh",
               paddingTop: rem(0),
             }}
-            //ta={"center"}
-            //order={1}
-            //h={rem(100)}
-            //pt={rem(0)}
-            //style={{ cursor: "none" }}
           >
             ADN
           </Title>
         </Tooltip.Floating>
       </Container>
 
-      <Container fluid w={"120rem"} bg={"#ffffff"} p={0}>
+      <Container fluid w={"120rem"} h={"90vh"} bg={"#ffffff"} p={0}>
         <Outlet />
       </Container>
     </>
