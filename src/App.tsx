@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, rem, Tooltip, Title, Accordion } from "@mantine/core";
+import { Container, rem, Tooltip, Title, Accordion, Flex } from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -17,7 +17,17 @@ import { useEffect } from "react";
 const bio = [
   {
     value: "Bio",
-    description: "This is my bio hehehehe",
+    description:
+      "Hi! I’m a communication design student at PoliMI.\n" +
+      "Some years ago I approached design by realizing that\n" +
+      "all my passions were powered by the same source: curiosity.\n" +
+      "Then, studying design took me to fantastic worlds like UX/UI,\n" +
+      "videogame design, computer animation and speculative design.\n" +
+      "Most of the time I am either reading a book or refining my\n" +
+      "works, always trying to improve who I am and what I do.\n" +
+      "Right now I’m on my way to become a UX/UI designer,\n" +
+      "while still keeping my passions in videogame design and electronic\n" +
+      "music production.",
   },
 ];
 
@@ -55,13 +65,15 @@ const App = () => {
             ADN
           </Title>
         </Tooltip.Floating>
-      </Container>
-      <Container fluid w={"120rem"} h={"90vh"} bg={"#ffffff"} p={0}>
         <Tooltip.Floating label="Bio" radius={rem(50)}>
           <Container w={"30%"}>
-            <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
+            <Accordion defaultValue={"Course"} chevronPosition={"left"}>
+              {accordionItems}
+            </Accordion>
           </Container>
         </Tooltip.Floating>
+      </Container>
+      <Container fluid w={"120rem"} h={"90vh"} bg={"#ffffff"} p={0}>
         <Outlet />
       </Container>
     </>
