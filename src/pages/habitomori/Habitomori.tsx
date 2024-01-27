@@ -41,7 +41,7 @@ const projectInfo = [
 const Habitomori = () => {
   const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
-      <Accordion.Control icon={item.emoji}>{item.value}</Accordion.Control>
+      <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
@@ -97,7 +97,7 @@ const Habitomori = () => {
         </Flex>
       </Grid.Col>
       <Grid.Col span={8}>
-        <ScrollArea h={"90vh"}>
+        <ScrollArea h={"90vh"} type={"never"}>
           <Tooltip.Floating
             label={"Scroll down"}
             radius={rem(24)}

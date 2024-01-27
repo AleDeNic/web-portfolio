@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, rem, Tooltip, Title } from "@mantine/core";
+import { Container, rem, Tooltip, Title, Accordion } from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -13,12 +13,29 @@ import { useEffect } from "react";
  *   <App />
  * )
  */
+
+const bio = [
+  {
+    value: "Bio",
+    description: "This is my bio hehehehe",
+  },
+];
+
 const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
     navigate("/projects");
   }, [navigate]);
+
+  const accordionItems = bio.map((item) => (
+    <Accordion.Item key={item.value} value={item.value}>
+      <Accordion.Control>{item.value}</Accordion.Control>
+      <Accordion.Panel style={{ textAlign: "left" }}>
+        {item.description}
+      </Accordion.Panel>
+    </Accordion.Item>
+  ));
 
   return (
     <>
@@ -39,8 +56,12 @@ const App = () => {
           </Title>
         </Tooltip.Floating>
       </Container>
-
       <Container fluid w={"120rem"} h={"90vh"} bg={"#ffffff"} p={0}>
+        <Tooltip.Floating label="Bio" radius={rem(50)}>
+          <Container w={"30%"}>
+            <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
+          </Container>
+        </Tooltip.Floating>
         <Outlet />
       </Container>
     </>

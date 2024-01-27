@@ -6,7 +6,7 @@ const Projects = () => {
   const navigate = useNavigate();
 
   return (
-    <ScrollArea h={"90vh"}>
+    <ScrollArea h={"90vh"} type={"never"}>
       <Grid gutter={rem(0)}>
         {projects.map((project) => (
           <Grid.Col
