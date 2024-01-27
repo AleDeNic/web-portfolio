@@ -2,12 +2,11 @@ import {
   Flex,
   rem,
   ScrollArea,
-  SimpleGrid,
   Grid,
   Text,
   Title,
   Tooltip,
-  Chip,
+  Image,
   Accordion,
 } from "@mantine/core";
 
@@ -68,32 +67,6 @@ const Habitomori = () => {
             a smartphone app that uses growing bonsais as progress metaphors.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
-          {/*<table>
-            <tr align={"left"}>
-              <td style={{ verticalAlign: "top" }}>Course</td>
-              <Chip size={"md"}>interaction design studio C3</Chip>
-              <Chip size={"md"}>group project</Chip>
-              <Chip size={"md"}>2022-23</Chip>
-            </tr>
-            <tr align={"left"}>
-              <td style={{ verticalAlign: "top" }}>My role</td>
-              <td>→ research → UX/UI design → prototyping</td>
-            </tr>
-            <tr align={"left"}>
-              <td style={{ verticalAlign: "top" }}>What I learned</td>
-              <td>
-                <p>→ to do research on specific users and their needs</p>
-                <p>
-                  → to develop solutions while considering techical limitations
-                </p>
-                <p>→ to design wireframes and design figma mockups</p>
-              </td>
-            </tr>
-            <tr align={"left"}>
-              <td style={{ verticalAlign: "top" }}>Links</td>
-              <td>→ https://shorturl.at/jru47</td>
-            </tr>
-          </table>*/}
         </Flex>
       </Grid.Col>
       <Grid.Col span={8}>
@@ -101,36 +74,52 @@ const Habitomori = () => {
           <Tooltip.Floating
             label={"Scroll down"}
             radius={rem(24)}
-            color={"#111111"}
+            color={"#000000"}
           >
-            <SimpleGrid
-              cols={1}
-              spacing={0}
-              bg={"blue"}
-              style={{ cursor: "none" }}
-            >
-              <div
+            <Grid p={0} style={{ cursor: "none" }}>
+              <Grid.Col
+                p={0}
                 style={{
                   height: "90vh",
                   width: "100%",
-                  backgroundColor: "red",
+                  backgroundColor: "#ffffff",
                 }}
-              />
-              <div
+              >
+                <Image
+                  w={"100%"}
+                  src={"/src/assets/habitomori/habitomori_01.png"}
+                  alt={"random"}
+                />
+              </Grid.Col>
+              <Grid.Col
+                p={0}
                 style={{
                   height: "90vh",
                   width: "100%",
-                  backgroundColor: "blue",
+                  backgroundColor: "#ffffff",
                 }}
-              />
-              <div
+              >
+                <Image
+                  w={"100%"}
+                  src={"/src/assets/habitomori/habitomori_02.png"}
+                  alt={"random"}
+                />
+              </Grid.Col>
+              <Grid.Col
+                p={0}
                 style={{
                   height: "90vh",
                   width: "100%",
-                  backgroundColor: "green",
+                  backgroundColor: "#ffffff",
                 }}
-              />
-            </SimpleGrid>
+              >
+                <Image
+                  w={"100%"}
+                  src={"/src/assets/habitomori/habitomori_03.png"}
+                  alt={"random"}
+                />
+              </Grid.Col>
+            </Grid>
           </Tooltip.Floating>
         </ScrollArea>
       </Grid.Col>

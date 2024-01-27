@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, rem, Tooltip, Title, Accordion, Flex } from "@mantine/core";
+import { Container, rem, Tooltip, Title, Accordion } from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -73,7 +73,7 @@ const App = () => {
           </Container>
         </Tooltip.Floating>
       </Container>
-      <Container fluid w={"120rem"} h={"90vh"} bg={"#ffffff"} p={0}>
+      <Container fluid w={"120rem"} bg={"#ffffff"} p={0}>
         <Outlet />
       </Container>
     </>
