@@ -22,19 +22,17 @@ import {
 
 const projectInfo = [
   {
-    value: "Course",
-    description:
-      "Crisp and refreshing fruit. Apples are known for their versatility and nutritional benefits. They come in a variety of flavors and are great for snacking, baking, or adding to salads.",
+    value: "COURSE",
+    description: "Interaction Design Studio •  2023",
   },
   {
-    value: "Which was my role?",
-    description:
-      "Naturally sweet and potassium-rich fruit. Bananas are a popular choice for their energy-boosting properties and can be enjoyed as a quick snack, added to smoothies, or used in baking.",
+    value: "ROLE",
+    description: "User research • UX/UI design • prototyping",
   },
   {
-    value: "What have I learned?",
+    value: "WHAT DID I LEARN?",
     description:
-      "Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.",
+      "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
   },
 ];
 const Habitomori = () => {
@@ -46,6 +44,7 @@ const Habitomori = () => {
       </Accordion.Panel>
     </Accordion.Item>
   ));
+
   return (
     <Grid p={0} gutter={0}>
       <Grid.Col span={4} pr={rem(100)}>
@@ -77,11 +76,7 @@ const Habitomori = () => {
       </Grid.Col>
       <Grid.Col span={8}>
         <ScrollArea h={"90vh"} type={"never"}>
-          <Tooltip.Floating
-            label={"Scroll down"}
-            radius={rem(24)}
-            color={"#000000"}
-          >
+          <Tooltip.Floating label={"SCROLL"} radius={rem(24)} color={"#9880ff"}>
             <Grid p={0} style={{ cursor: "none" }}>
               <Grid.Col
                 p={0}
