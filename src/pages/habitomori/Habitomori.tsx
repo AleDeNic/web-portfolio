@@ -50,7 +50,13 @@ const Habitomori = () => {
     <Grid p={0} gutter={0}>
       <Grid.Col span={4} pr={rem(100)}>
         <Flex direction={"column"} pl={rem(20)}>
-          <Title ta={"left"} pb={rem(50)}>
+          <Title
+            ta={"left"}
+            pb={rem(50)}
+            style={{
+              fontFamily: "IBM Plex Sans, sans-serif",
+            }}
+          >
             Habitomori
           </Title>
 

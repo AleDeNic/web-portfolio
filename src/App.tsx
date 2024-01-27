@@ -1,6 +1,15 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, rem, Tooltip, Title, Accordion } from "@mantine/core";
+import {
+  Container,
+  rem,
+  Tooltip,
+  Accordion,
+  Collapse,
+  Image,
+  Group,
+  Box,
+} from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -38,41 +47,37 @@ const App = () => {
     navigate("/projects");
   }, [navigate]);
 
-  const accordionItems = bio.map((item) => (
-    <Accordion.Item key={item.value} value={item.value}>
-      <Accordion.Control>{item.value}</Accordion.Control>
+  const accordionItems = bio?.map((item) => (
+    <Accordion.Item key={item?.value} value={item?.value}>
+      <Accordion.Control>{item?.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
-        {item.description}
+        {item?.description}
       </Accordion.Panel>
     </Accordion.Item>
   ));
 
   return (
     <>
-      <Container fluid bg={"#ffffff"} w={"100%"}>
+      <Group bg={"#ffffff"} justify={"space-between"} px={rem(20)}>
         <Tooltip.Floating label="Home" radius={rem(50)}>
-          <Title
+          <Image
             onClick={() => navigate("/projects")}
             style={{
               cursor: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "10vh",
-              paddingTop: rem(0),
             }}
-          >
-            ADN
-          </Title>
+            src={"/src/assets/ADN_logo.svg"}
+            alt={"random"}
+            fit={"contain"}
+            h={"auto"}
+            w={"auto"}
+          />
         </Tooltip.Floating>
-        <Tooltip.Floating label="Bio" radius={rem(50)}>
-          <Container w={"30%"}>
-            <Accordion defaultValue={"Course"} chevronPosition={"left"}>
-              {accordionItems}
-            </Accordion>
-          </Container>
-        </Tooltip.Floating>
-      </Container>
+        <Box w={rem(400)}>
+          <Accordion defaultValue={"Bio"} chevronPosition={"left"}>
+            {accordionItems}
+          </Accordion>
+        </Box>
+      </Group>
       <Container fluid w={"120rem"} bg={"#ffffff"} p={0}>
         <Outlet />
       </Container>
