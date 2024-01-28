@@ -78,7 +78,7 @@ export const projects: Project[] = [
       {
         course:
           "Ergonomics applied to the design of usable web pages and apps • 2023-2024",
-        role: "UX/UI design • prototyping",
+        role: "UX/UI design • interactive prototyping",
         learned:
           "To analyze the usability and accessibility of a desktop website • To design desktop wireframes and interactive prototypes • to test the redesign with users",
       },
