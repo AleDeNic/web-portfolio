@@ -29,12 +29,11 @@ export interface ImageData {
  */
 export const projects: Project[] = [
   {
-    image:
-      "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s",
+    image: "/src/assets/covers/habitomori_cover.jpg",
     path: "/habitomori",
     name: "Habitomori",
     nameCaps: "HABITOMORI",
-    color: "#9880ff",
+    color: "#aea7eb",
     textColor: "#000000",
     tooltipHome: "Home",
     images: [
@@ -46,12 +45,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    image:
-      "https://fastly.picsum.photos/id/397/384/320.jpg?hmac=obx1PO8Y15Bq0XueV9P5_CnQ8H8Ug68bF1-nAO7g9PA",
+    image: "/src/assets/covers/noclip_cover.jpg",
     path: "/noclip",
     name: "Noclip",
     nameCaps: "NOCLIP",
-    color: "#ffdf3b",
+    color: "#99f0fe",
     textColor: "#000000",
     tooltipHome: "Home",
     images: [
@@ -66,12 +64,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    image:
-      "https://fastly.picsum.photos/id/802/384/320.jpg?hmac=gihrgPau0XDlZ9bU8onuwH8gUpvhlmb1OAGTQOlZaxA",
+    image: "/src/assets/covers/sussurri-sepolti_cover.jpg",
     path: "/sussurri-sepolti",
     name: "SussurriSepolti",
     nameCaps: "SUSSURRI SEPOLTI",
-    color: "#44655b",
+    color: "#5d705f",
     textColor: "#ffffff",
     tooltipHome: "Home",
     images: [
@@ -82,37 +79,48 @@ export const projects: Project[] = [
     ],
   },
   {
-    image:
-      "https://fastly.picsum.photos/id/236/384/320.jpg?hmac=kcD9ok0NwGbXMAOWy92wtrbKAwaLOC7-zyTQw_YFJsA",
+    image: "/src/assets/covers/everlived_cover.jpg",
     path: "/everlived",
     name: "Everlived",
     nameCaps: "EVERLIVED",
-    color: "#5a64ff",
+    color: "#586be3",
     textColor: "#ffffff",
     tooltipHome: "Home",
     images: [
-      { id: 1, src: "/src/assets/everlived/01.jpg" },
-      { id: 2, src: "/src/assets/everlived/02.jpg" },
-      { id: 3, src: "/src/assets/everlived/03.jpg" },
+      { id: 1, src: "/src/assets/everlived/everlived_01.jpg" },
+      { id: 2, src: "/src/assets/everlived/everlived_02.jpg" },
+      { id: 3, src: "/src/assets/everlived/everlived_03.jpg" },
+      { id: 4, src: "/src/assets/everlived/everlived_04.jpg" },
+      { id: 5, src: "/src/assets/everlived/everlived_05.jpg" },
+      { id: 6, src: "/src/assets/everlived/everlived_06.jpg" },
+      { id: 7, src: "/src/assets/everlived/everlived_07.jpg" },
+      { id: 8, src: "/src/assets/everlived/everlived_08.jpg" },
     ],
   },
   {
-    image:
-      "https://fastly.picsum.photos/id/1074/384/320.jpg?hmac=9BbSZDlJXuMIJPA9nYrY9TwJAbIU8F89i6-Wug61BXo",
+    image: "/src/assets/covers/la-superscomoda_cover.jpg",
     path: "/la-superscomoda",
     name: "LaSuperscomoda",
     nameCaps: "LA SUPERSCOMODA",
-    color: "#d30000",
+    color: "#f51414",
     textColor: "#ffffff",
     tooltipHome: "Home",
+    images: [
+      { id: 1, src: "/src/assets/la-superscomoda/la-superscomoda_01.jpg" },
+      { id: 2, src: "/src/assets/la-superscomoda/la-superscomoda_02.jpg" },
+      { id: 3, src: "/src/assets/la-superscomoda/la-superscomoda_03.jpg" },
+      { id: 4, src: "/src/assets/la-superscomoda/la-superscomoda_04.jpg" },
+      { id: 5, src: "/src/assets/la-superscomoda/la-superscomoda_05.jpg" },
+      { id: 6, src: "/src/assets/la-superscomoda/la-superscomoda_06.jpg" },
+      { id: 7, src: "/src/assets/la-superscomoda/la-superscomoda_07.jpg" },
+    ],
   },
   {
-    image:
-      "https://fastly.picsum.photos/id/19/384/320.jpg?hmac=_vVCqxz1lFZtax1bROKnBn6DF3wUiW5gm_j95D8rWw0",
+    image: "/src/assets/covers/quanto_cover.jpg",
     path: "/quanto",
     name: "Quanto",
     nameCaps: "QUANTO",
-    color: "#0023ff",
+    color: "#0171fa",
     textColor: "#ffffff",
     tooltipHome: "Home",
     images: [

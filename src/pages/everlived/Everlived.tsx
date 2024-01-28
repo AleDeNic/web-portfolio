@@ -14,16 +14,16 @@ import { projects } from "../../utils/projects.ts";
 const projectInfo = [
   {
     value: "COURSE",
-    description: "Interaction Design Studio •  2023",
+    description: "Computer animation •  2021-2022",
   },
   {
     value: "ROLE",
-    description: "User research • UX/UI design • prototyping",
+    description: "3D modeling/animation • music",
   },
   {
     value: "WHAT DID I LEARN?",
     description:
-      "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+      "To model, create materials and animate in Blender • to embed a video artifact with an original soundtrack",
   },
 ];
 const Everlived = () => {
@@ -51,16 +51,11 @@ const Everlived = () => {
             EVERLIVED
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            HABITOMORI is the only application made for hikikomoris. It helps
-            them to design and nurture positive habits, giving value to their
-            time during isolation. Hikikomori is a underrated problem,
-            especially in Italy. For this reason, after a detailed user
-            research, we developed a method of habit design, based on
-            cognitive-behavioral therapy and behavioral design. The goal was to
-            help hikikomoris to feel successful during their isolation without
-            relying too much on their motivation or on the smartphone, but more
-            on their daily routine. The final artifact is a working prototype of
-            a smartphone app that uses growing bonsais as progress metaphors.
+            Everlived is a short sci-fi film. The protagonists are six alien
+            animals living in various dreamlike natural environments. The
+            graphics and the music are made from scratch to recreate the
+            specific visual aesthetics of late 90s and early 2000s videogames,
+            which was achieved by low poly 3D models and stretched textures.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

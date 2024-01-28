@@ -24,16 +24,16 @@ import { projects } from "../../utils/projects.ts";
 const projectInfo = [
   {
     value: "COURSE",
-    description: "Interaction Design Studio •  2023",
+    description: "Laboratorio di sintesi finale •  2021-2022",
   },
   {
     value: "ROLE",
-    description: "User research • UX/UI design • prototyping",
+    description: "Brand identity • coding • 3D renders",
   },
   {
     value: "WHAT DID I LEARN?",
     description:
-      "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+      "To focus more on the problem, not just on the solution  • to criticize design practices using a speculative approach • to build and programme an arduino device",
   },
 ];
 const LaSuperscomoda = () => {
@@ -61,16 +61,14 @@ const LaSuperscomoda = () => {
             LA SUPERSCOMODA
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            HABITOMORI is the only application made for hikikomoris. It helps
-            them to design and nurture positive habits, giving value to their
-            time during isolation. Hikikomori is a underrated problem,
-            especially in Italy. For this reason, after a detailed user
-            research, we developed a method of habit design, based on
-            cognitive-behavioral therapy and behavioral design. The goal was to
-            help hikikomoris to feel successful during their isolation without
-            relying too much on their motivation or on the smartphone, but more
-            on their daily routine. The final artifact is a working prototype of
-            a smartphone app that uses growing bonsais as progress metaphors.
+            La Superscomoda is a speculative design project which gives rise to
+            a reflection on the sedentary lifestyle. We designed a paradoxical
+            uncomfortable chair that can automatically get you back on your feet
+            every twenty minutes of use. The goal was to challenge the paradigm
+            of design for comfort, which appears to be harmful to human health.
+            The provocative intent of the project was achieved by creating
+            Dissit, a fictional brand which parodies the language of Italian
+            furniture design.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

@@ -28,12 +28,11 @@ const projectInfo = [
   },
   {
     value: "ROLE",
-    description: "User research • UX/UI design • prototyping",
+    description: "Graphic design",
   },
   {
     value: "WHAT DID I LEARN?",
-    description:
-      "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+    description: "To translate a play into posters",
   },
 ];
 const SussurriSepolti = () => {
@@ -61,16 +60,7 @@ const SussurriSepolti = () => {
             SUSSURRI SEPOLTI
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            HABITOMORI is the only application made for hikikomoris. It helps
-            them to design and nurture positive habits, giving value to their
-            time during isolation. Hikikomori is a underrated problem,
-            especially in Italy. For this reason, after a detailed user
-            research, we developed a method of habit design, based on
-            cognitive-behavioral therapy and behavioral design. The goal was to
-            help hikikomoris to feel successful during their isolation without
-            relying too much on their motivation or on the smartphone, but more
-            on their daily routine. The final artifact is a working prototype of
-            a smartphone app that uses growing bonsais as progress metaphors.
+            Sussurri Sepolti is a theatrical play.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

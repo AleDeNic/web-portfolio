@@ -24,16 +24,18 @@ import { projects } from "../../utils/projects.ts";
 const projectInfo = [
   {
     value: "COURSE",
-    description: "Interaction Design Studio •  2023",
+    description: "Videogame design and programming •  2022-2023",
   },
   {
     value: "ROLE",
-    description: "User research • UX/UI design • prototyping",
+    description: "Game/level design • 3D art • UX/UI • music • graphic design",
   },
   {
     value: "WHAT DID I LEARN?",
     description:
-      "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+      "To cooperate effectively with programmers\n" +
+      " • to use development tools like GitHub\n" +
+      " • to design a videogame from start to finish",
   },
 ];
 const Noclip = () => {
@@ -61,16 +63,13 @@ const Noclip = () => {
             NOCLIP
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            HABITOMORI is the only application made for hikikomoris. It helps
-            them to design and nurture positive habits, giving value to their
-            time during isolation. Hikikomori is a underrated problem,
-            especially in Italy. For this reason, after a detailed user
-            research, we developed a method of habit design, based on
-            cognitive-behavioral therapy and behavioral design. The goal was to
-            help hikikomoris to feel successful during their isolation without
-            relying too much on their motivation or on the smartphone, but more
-            on their daily routine. The final artifact is a working prototype of
-            a smartphone app that uses growing bonsais as progress metaphors.
+            NOCLIP is an experimental 3D videogame that challenges the usual way
+            of designing and solving puzzles, being a fist-person platformer in
+            which the player has to complete the puzzles by “noclipping” through
+            the map to see invisible and intangible objects. UX has beed
+            designed to guarantee an enjoyable experience also to non-players,
+            while UI, music and graphics have been designed to give a retro vibe
+            to the game aesthetics.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

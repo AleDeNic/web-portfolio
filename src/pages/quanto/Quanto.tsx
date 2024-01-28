@@ -24,16 +24,15 @@ import { projects } from "../../utils/projects.ts";
 const projectInfo = [
   {
     value: "COURSE",
-    description: "Interaction Design Studio •  2023",
+    description: "Laboratorio di progetto della comunicazione visiva •  2021",
   },
   {
     value: "ROLE",
-    description: "User research • UX/UI design • prototyping",
+    description: "2D animation • brand identity • music",
   },
   {
     value: "WHAT DID I LEARN?",
-    description:
-      "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+    description: "to design a brand identity  • to create a motion design reel",
   },
 ];
 const Quanto = () => {
@@ -61,16 +60,11 @@ const Quanto = () => {
             QUANTO
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            HABITOMORI is the only application made for hikikomoris. It helps
-            them to design and nurture positive habits, giving value to their
-            time during isolation. Hikikomori is a underrated problem,
-            especially in Italy. For this reason, after a detailed user
-            research, we developed a method of habit design, based on
-            cognitive-behavioral therapy and behavioral design. The goal was to
-            help hikikomoris to feel successful during their isolation without
-            relying too much on their motivation or on the smartphone, but more
-            on their daily routine. The final artifact is a working prototype of
-            a smartphone app that uses growing bonsais as progress metaphors.
+            QUANTO is a futuristic fictional brand that gives to its customers
+            the power to achieve the impossible: to capture and exploit the
+            energy of lightnings. The brand identity embraces both the visual
+            artifacts and the physical installation of the product, which is
+            entirely controlled by a smartphone app.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>
