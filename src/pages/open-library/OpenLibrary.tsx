@@ -1,40 +1,19 @@
 import {
+  Accordion,
   Flex,
+  Grid,
+  Image,
   rem,
   ScrollArea,
-  Grid,
   Text,
   Tooltip,
-  Image,
-  Accordion,
 } from "@mantine/core";
 
 import { projects } from "../../utils/projects.ts";
+import _ from "lodash";
 
-/*const projectInfo = [
-  {
-    value: "COURSE",
-    description: "Ergonomics applied to the design of usable web pages and apps",
-  },
-  {
-    value: "ROLE",
-    description: "Brand identity • coding • 3D renders",
-  },
-  {
-    value: "WHAT DID I LEARN?",
-    description:
-      "To focus more on the problem, not just on the solution  • to criticize design practices using a speculative approach • to build and programme an arduino device",
-  },
-];*/
-const OpenLibrary = () => {
-  /*const accordionItems = projectInfo.map((item) => (
-    <Accordion.Item key={item.value} value={item.value}>
-      <Accordion.Control>{item.value}</Accordion.Control>
-      <Accordion.Panel style={{ textAlign: "left" }}>
-        {item.description}
-      </Accordion.Panel>
-    </Accordion.Item>
-  ));*/
+export const OpenLibrary = () => {
+  const project = _.find(projects, { name: "OpenLibrary" });
 
   return (
     <Grid px={"10vw"} gutter={0}>
@@ -48,18 +27,31 @@ const OpenLibrary = () => {
               fontSize: rem(24),
             }}
           >
-            OPEN LIBRARY
+            {project?.title?.toUpperCase()}
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            Open Library is an open source website that has the goal to store
-            the metadata of all the books ever published. The idea is good, but
-            the website is not usable at all. So we decided to redesign it,
-            focusing on the user experience and the accessibility. Redesigning
-            the main features, like the book browsing and the metadata upload
-            process, we remade from scratch the entire visual identity and
-            design system.
+            {project?.description}
           </Text>
-          <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
+          <Accordion defaultValue={"course"}>
+            <Accordion.Item value={"course"}>
+              <Accordion.Control>COURSE</Accordion.Control>
+              <Accordion.Panel style={{ textAlign: "left" }}>
+                {project?.info?.course}
+              </Accordion.Panel>
+            </Accordion.Item>
+            <Accordion.Item value={"role"}>
+              <Accordion.Control>ROLE</Accordion.Control>
+              <Accordion.Panel style={{ textAlign: "left" }}>
+                {project?.info?.role}
+              </Accordion.Panel>
+            </Accordion.Item>
+            <Accordion.Item value={"learned"}>
+              <Accordion.Control>WHAT DID I LEARN?</Accordion.Control>
+              <Accordion.Panel style={{ textAlign: "left" }}>
+                {project?.info?.learned}
+              </Accordion.Panel>
+            </Accordion.Item>
+          </Accordion>
         </Flex>
       </Grid.Col>
       <Grid.Col span={8} pl={"5vw"}>
@@ -68,20 +60,14 @@ const OpenLibrary = () => {
             label={"SCROLL"}
             radius={rem(24)}
             color={"#4752ff"}
-            style={{ color: "#ffffff" }}
+            c={"#ffffff"}
           >
             <Grid p={0} style={{ cursor: "none" }}>
-              {projects
-                .find((project) => project.name === "OpenLibrary")
-                ?.images?.map((image) => (
-                  <Grid.Col
-                    key={image.id}
-                    p={0}
-                    style={{ width: "100%", backgroundColor: "#ffffff" }}
-                  >
-                    <Image w="100%" src={image.src} alt={image.alt} />
-                  </Grid.Col>
-                ))}
+              {project?.images?.map((image) => (
+                <Grid.Col key={image.id} w={"100%"} bg={"#ffffff"}>
+                  <Image w="100%" src={image.src} alt={image.alt} />
+                </Grid.Col>
+              ))}
             </Grid>
           </Tooltip.Floating>
         </ScrollArea>
@@ -89,5 +75,3 @@ const OpenLibrary = () => {
     </Grid>
   );
 };
-
-export default OpenLibrary;

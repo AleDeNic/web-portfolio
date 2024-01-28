@@ -10,30 +10,29 @@ import {
 } from "@mantine/core";
 
 import { projects } from "../../utils/projects.ts";
+import _ from "lodash";
 
-/*const projectInfo = [
-  {
-    value: "COURSE",
-    description: "Interaction Design Studio •  2023",
-  },
+const projectInfo = [
   {
     value: "ROLE",
     description: "Graphic design",
   },
   {
     value: "WHAT DID I LEARN?",
-    description: "To translate a play into posters",
+    description: "To design posters for an event",
   },
-];*/
+];
 const SussurriSepolti = () => {
-  /*  const accordionItems = projectInfo.map((item) => (
+  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));*/
+  ));
+
+  const project = _.find(projects, { name: "SussurriSepolti" });
 
   return (
     <Grid px={"10vw"} gutter={0}>

@@ -10,8 +10,9 @@ import {
 } from "@mantine/core";
 
 import { projects } from "../../utils/projects.ts";
+import _ from "lodash";
 
-/*const projectInfo = [
+const projectInfo = [
   {
     value: "COURSE",
     description: "Interaction Design Studio • 2023",
@@ -25,16 +26,18 @@ import { projects } from "../../utils/projects.ts";
     description:
       "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
   },
-];*/
+];
 const Habitomori = () => {
-  /*  const accordionItems = projectInfo.map((item) => (
+  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));*/
+  ));
+
+  const project = _.find(projects, { name: "Habitomori" });
 
   return (
     <Grid px={"10vw"} gutter={0}>
@@ -61,6 +64,9 @@ const Habitomori = () => {
             relying too much on their motivation or on the smartphone, but more
             on their daily routine. The final artifact is a working prototype of
             a smartphone app that uses growing bonsais as progress metaphors.
+            <p>
+              <a href={"https://shorturl.at/jru47"}>Prototype</a>
+            </p>
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

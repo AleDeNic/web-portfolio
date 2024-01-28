@@ -9,9 +9,10 @@ import {
   Accordion,
 } from "@mantine/core";
 
-import { projects } from "../../utils/projects.ts";
+import { Project, projects } from "../../utils/projects.ts";
+import _ from "lodash";
 
-/*const projectInfo = [
+const projectInfo = [
   {
     value: "COURSE",
     description: "Laboratorio di progetto della comunicazione visiva •  2021",
@@ -24,16 +25,18 @@ import { projects } from "../../utils/projects.ts";
     value: "WHAT DID I LEARN?",
     description: "to design a brand identity  • to create a motion design reel",
   },
-];*/
+];
 const Quanto = () => {
-  /*  const accordionItems = projectInfo.map((item) => (
+  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));*/
+  ));
+
+  const project = _.find(projects, { name: "Quanto" });
 
   return (
     <Grid px={"10vw"} gutter={0}>
@@ -55,6 +58,12 @@ const Quanto = () => {
             energy of lightnings. The brand identity embraces both the visual
             artifacts and the physical installation of the product, which is
             entirely controlled by a smartphone app.
+            <p>
+              <a href={"vimeo.com/727435007"}>Brand reel</a>
+            </p>
+            <p>
+              <a href={"vimeo.com/727313853"}>Logo animation</a>
+            </p>
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>
@@ -69,7 +78,7 @@ const Quanto = () => {
           >
             <Grid p={0} style={{ cursor: "none" }}>
               {projects
-                .find((project) => project.name === "Quanto")
+                .find((project: Project) => project.name === "Quanto")
                 ?.images?.map((image) => (
                   <Grid.Col
                     key={image.id}

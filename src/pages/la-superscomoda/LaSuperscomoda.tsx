@@ -11,7 +11,9 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-/*const projectInfo = [
+import _ from "lodash";
+
+const projectInfo = [
   {
     value: "COURSE",
     description: "Laboratorio di sintesi finale •  2021-2022",
@@ -26,16 +28,17 @@ import { projects } from "../../utils/projects.ts";
       "To focus more on the problem, not just on the solution  • to criticize design practices using a speculative approach • to build and programme an arduino device",
   },
 ];
-*/
 const LaSuperscomoda = () => {
-  /*const accordionItems = projectInfo.map((item) => (
+  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));*/
+  ));
+
+  const project = _.find(projects, { name: "LaSuperscomoda" });
 
   return (
     <Grid px={"10vw"} gutter={0}>
@@ -60,6 +63,12 @@ const LaSuperscomoda = () => {
             The provocative intent of the project was achieved by creating
             Dissit, a fictional brand which parodies the language of Italian
             furniture design.
+            <p>
+              <a href={"https://vimeo.com/726296606"}>Trailer</a>
+            </p>
+            <p>
+              <a href={"https://vimeo.com/727449311"}>Teaser</a>
+            </p>
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

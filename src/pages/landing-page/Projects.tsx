@@ -96,9 +96,9 @@ const Projects = () => {
             fantastic worlds like UX/UI, videogame design, computer animation
             and speculative design. Most of the time I am either reading a book
             or refining my works, always trying to improve who I am and what I
-            do. Right now I’m on my way to become a UX/UI designer, still
-            keeping my passions in videogame design and electronic music
-            production.
+            do. Right now I’m on my way to become a UX/UI designer and
+            programmer, still keeping my passions in videogame design and
+            electronic music production.
           </Text>
         </Collapse>
       </Container>
@@ -114,14 +114,13 @@ const Projects = () => {
               }}
             >
               <Tooltip.Floating
-                label={project.nameCaps}
+                label={project.name.toUpperCase()}
                 radius={rem(24)}
                 color={project.color}
-                style={{ color: project.textColor }}
+                c={project.textColor}
               >
                 <Image
                   src={project.thumbnail}
-                  alt={"I'm an image"}
                   onClick={() => navigate(project.path)}
                   radius={rem(0)}
                   style={{ cursor: "none", height: "100%" }}

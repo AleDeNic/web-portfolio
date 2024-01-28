@@ -10,8 +10,9 @@ import {
 } from "@mantine/core";
 
 import { projects } from "../../utils/projects.ts";
+import _ from "lodash";
 
-/*const projectInfo = [
+const projectInfo = [
   {
     value: "COURSE",
     description: "Videogame design and programming •  2022-2023",
@@ -27,16 +28,18 @@ import { projects } from "../../utils/projects.ts";
       " • to use development tools like GitHub\n" +
       " • to design a videogame from start to finish",
   },
-];*/
+];
+const project = _.find(projects, { name: "Noclip" });
+
 const Noclip = () => {
-  /*  const accordionItems = projectInfo.map((item) => (
+  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));*/
+  ));
 
   return (
     <Grid px={"10vw"} gutter={0}>
@@ -60,6 +63,19 @@ const Noclip = () => {
             designed to guarantee an enjoyable experience also to non-players,
             while UI, music and graphics have been designed to give a retro vibe
             to the game aesthetics.
+            <p>
+              <a href={"polimi-game-collective.itch.io/noclip"}>Play</a>
+            </p>
+            <p>
+              <a href={"https://www.youtube.com/watch?v=eCQ0NDQ5Ges"}>
+                Video trailer
+              </a>
+            </p>
+            <p>
+              <a href={"https://www.youtube.com/watch?v=FaavR88cXMY"}>
+                Soundtrack
+              </a>
+            </p>
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

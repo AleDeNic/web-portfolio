@@ -5,14 +5,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
-import Projects from "./pages/landing-page/Projects.tsx";
-import Habitomori from "./pages/habitomori/Habitomori.tsx";
-import OpenLibrary from "./pages/open-library/OpenLibrary.tsx";
-import Noclip from "./pages/noclip/Noclip.tsx";
-import SussurriSepolti from "./pages/sussurri-sepolti/SussurriSepolti.tsx";
-import Everlived from "./pages/everlived/Everlived.tsx";
-import LaSuperscomoda from "./pages/la-superscomoda/LaSuperscomoda.tsx";
-import Quanto from "./pages/quanto/Quanto.tsx";
+import Projects from "./pages/landing-page/Projects";
+import Habitomori from "./pages/habitomori/Habitomori";
+import { OpenLibrary } from "./pages/open-library/OpenLibrary";
+import Noclip from "./pages/noclip/Noclip";
+import SussurriSepolti from "./pages/sussurri-sepolti/SussurriSepolti";
+import Everlived from "./pages/everlived/Everlived";
+import LaSuperscomoda from "./pages/la-superscomoda/LaSuperscomoda";
+import Quanto from "./pages/quanto/Quanto";
 
 /**
  * This is the entry point of the application.

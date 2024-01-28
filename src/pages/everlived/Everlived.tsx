@@ -10,8 +10,9 @@ import {
 } from "@mantine/core";
 
 import { projects } from "../../utils/projects.ts";
+import _ from "lodash";
 
-/*const projectInfo = [
+const projectInfo = [
   {
     value: "COURSE",
     description: "Computer animation •  2021-2022",
@@ -25,16 +26,18 @@ import { projects } from "../../utils/projects.ts";
     description:
       "To model, create materials and animate in Blender • to embed a video artifact with an original soundtrack",
   },
-];*/
+];
+
+const project = _.find(projects, { name: "Everlived" });
 const Everlived = () => {
-  /*  const accordionItems = projectInfo.map((item) => (
+  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));*/
+  ));
 
   return (
     <Grid px={"10vw"} gutter={0}>
@@ -56,6 +59,9 @@ const Everlived = () => {
             graphics and the music are made from scratch to recreate the
             specific visual aesthetics of late 90s and early 2000s videogames,
             which was achieved by low poly 3D models and stretched textures.
+            <p>
+              <a href={"https://vimeo.com/721748255"}>Watch</a>
+            </p>
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>
