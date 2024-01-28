@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://aledenic.github.io/web-portfolio/",
+  "homepage" : "web-portfolio/src/main.tsx",
   "name": "web-portfolio",
   "private": true,
   "version": "0.0.0",
