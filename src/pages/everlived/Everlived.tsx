@@ -11,7 +11,7 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-const projectInfo = [
+/*const projectInfo = [
   {
     value: "COURSE",
     description: "Computer animation •  2021-2022",
@@ -25,16 +25,16 @@ const projectInfo = [
     description:
       "To model, create materials and animate in Blender • to embed a video artifact with an original soundtrack",
   },
-];
+];*/
 const Everlived = () => {
-  const accordionItems = projectInfo.map((item) => (
+  /*  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));
+  ));*/
 
   return (
     <Grid px={"10vw"} gutter={0}>

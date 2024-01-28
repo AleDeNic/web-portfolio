@@ -1,21 +1,27 @@
 /**
  * The Project interface represents the structure of a project object.
  * @interface
- * @property {string} image - The URL of the project's image.
+ * @property {string} thumbnail - The URL of the project's image.
  * @property {string} path - The path of the project.
  * @property {string} [title] - The title of the project. This property is optional.
  * @property {string} [description] - The description of the project. This property is optional.
  */
 export interface Project {
-  image: string;
+  thumbnail: string;
   path: string;
   name: string;
   nameCaps?: string;
   color?: string;
   textColor?: string;
   tooltipHome?: string;
-  description?: string;
   images?: ImageData[]; // Array of images for each project
+  info?: ProjectInfo;
+}
+
+export interface ProjectInfo {
+  course?: string;
+  role?: string;
+  learned?: string;
 }
 
 export interface ImageData {
@@ -29,7 +35,7 @@ export interface ImageData {
  */
 export const projects: Project[] = [
   {
-    image: "/src/assets/covers/habitomori_cover.jpg",
+    thumbnail: "/src/assets/covers/habitomori_cover.jpg",
     path: "/habitomori",
     name: "Habitomori",
     nameCaps: "HABITOMORI",
@@ -43,9 +49,17 @@ export const projects: Project[] = [
       { id: 4, src: "/src/assets/habitomori/habitomori_04.jpg" },
       { id: 5, src: "/src/assets/habitomori/habitomori_05.jpg" },
     ],
+    info: [
+      {
+        course: "Interaction Design Studio • 2023",
+        role: "User research • UX/UI design • prototyping",
+        learned:
+          "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+      },
+    ],
   },
   {
-    image: "/src/assets/covers/open-library_cover.jpg",
+    thumbnail: "/src/assets/covers/open-library_cover.jpg",
     path: "/open-library",
     name: "OpenLibrary",
     nameCaps: "OPEN LIBRARY",
@@ -60,9 +74,10 @@ export const projects: Project[] = [
       { id: 5, src: "/src/assets/open-library/open-library_05.jpg" },
       { id: 6, src: "/src/assets/open-library/open-library_06.jpg" },
     ],
+    info: [{ course: "", role: "", learned: "" }],
   },
   {
-    image: "/src/assets/covers/noclip_cover.jpg",
+    thumbnail: "/src/assets/covers/noclip_cover.jpg",
     path: "/noclip",
     name: "Noclip",
     nameCaps: "NOCLIP",
@@ -79,9 +94,10 @@ export const projects: Project[] = [
       { id: 7, src: "/src/assets/noclip/noclip_07.jpg" },
       { id: 8, src: "/src/assets/noclip/noclip_08.jpg" },
     ],
+    info: [{ course: "", role: "", learned: "" }],
   },
   {
-    image: "/src/assets/covers/sussurri-sepolti_cover.jpg",
+    thumbnail: "/src/assets/covers/sussurri-sepolti_cover.jpg",
     path: "/sussurri-sepolti",
     name: "SussurriSepolti",
     nameCaps: "SUSSURRI SEPOLTI",
@@ -94,9 +110,10 @@ export const projects: Project[] = [
       { id: 3, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_03.jpg" },
       { id: 4, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_04.jpg" },
     ],
+    info: [{ course: "", role: "", learned: "" }],
   },
   {
-    image: "/src/assets/covers/everlived_cover.jpg",
+    thumbnail: "/src/assets/covers/everlived_cover.jpg",
     path: "/everlived",
     name: "Everlived",
     nameCaps: "EVERLIVED",
@@ -113,9 +130,10 @@ export const projects: Project[] = [
       { id: 7, src: "/src/assets/everlived/everlived_07.jpg" },
       { id: 8, src: "/src/assets/everlived/everlived_08.jpg" },
     ],
+    info: [{ course: "", role: "", learned: "" }],
   },
   {
-    image: "/src/assets/covers/la-superscomoda_cover.jpg",
+    thumbnail: "/src/assets/covers/la-superscomoda_cover.jpg",
     path: "/la-superscomoda",
     name: "LaSuperscomoda",
     nameCaps: "LA SUPERSCOMODA",
@@ -131,9 +149,10 @@ export const projects: Project[] = [
       { id: 6, src: "/src/assets/la-superscomoda/la-superscomoda_06.jpg" },
       { id: 7, src: "/src/assets/la-superscomoda/la-superscomoda_07.jpg" },
     ],
+    info: [{ course: "", role: "", learned: "" }],
   },
   {
-    image: "/src/assets/covers/quanto_cover.jpg",
+    thumbnail: "/src/assets/covers/quanto_cover.jpg",
     path: "/quanto",
     name: "Quanto",
     nameCaps: "QUANTO",
@@ -148,5 +167,6 @@ export const projects: Project[] = [
       { id: 5, src: "/src/assets/quanto/quanto_05.jpg" },
       { id: 6, src: "/src/assets/quanto/quanto_06.jpg" },
     ],
+    info: [{ course: "", role: "", learned: "" }],
   },
 ];

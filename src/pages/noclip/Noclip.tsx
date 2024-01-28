@@ -11,7 +11,7 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-const projectInfo = [
+/*const projectInfo = [
   {
     value: "COURSE",
     description: "Videogame design and programming •  2022-2023",
@@ -27,16 +27,16 @@ const projectInfo = [
       " • to use development tools like GitHub\n" +
       " • to design a videogame from start to finish",
   },
-];
+];*/
 const Noclip = () => {
-  const accordionItems = projectInfo.map((item) => (
+  /*  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));
+  ));*/
 
   return (
     <Grid px={"10vw"} gutter={0}>

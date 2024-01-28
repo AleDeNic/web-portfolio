@@ -11,7 +11,7 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-const projectInfo = [
+/*const projectInfo = [
   {
     value: "COURSE",
     description: "Laboratorio di progetto della comunicazione visiva •  2021",
@@ -24,16 +24,16 @@ const projectInfo = [
     value: "WHAT DID I LEARN?",
     description: "to design a brand identity  • to create a motion design reel",
   },
-];
+];*/
 const Quanto = () => {
-  const accordionItems = projectInfo.map((item) => (
+  /*  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));
+  ));*/
 
   return (
     <Grid px={"10vw"} gutter={0}>

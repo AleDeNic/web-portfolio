@@ -11,10 +11,10 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-const projectInfo = [
+/*const projectInfo = [
   {
     value: "COURSE",
-    description: "Interaction Design Studio •  2023",
+    description: "Interaction Design Studio • 2023",
   },
   {
     value: "ROLE",
@@ -25,16 +25,16 @@ const projectInfo = [
     description:
       "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
   },
-];
+];*/
 const Habitomori = () => {
-  const accordionItems = projectInfo.map((item) => (
+  /*  const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));
+  ));*/
 
   return (
     <Grid px={"10vw"} gutter={0}>

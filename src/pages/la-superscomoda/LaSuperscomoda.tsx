@@ -11,7 +11,7 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-const projectInfo = [
+/*const projectInfo = [
   {
     value: "COURSE",
     description: "Laboratorio di sintesi finale •  2021-2022",
@@ -26,15 +26,16 @@ const projectInfo = [
       "To focus more on the problem, not just on the solution  • to criticize design practices using a speculative approach • to build and programme an arduino device",
   },
 ];
+*/
 const LaSuperscomoda = () => {
-  const accordionItems = projectInfo.map((item) => (
+  /*const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
       <Accordion.Panel style={{ textAlign: "left" }}>
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
-  ));
+  ));*/
 
   return (
     <Grid px={"10vw"} gutter={0}>
