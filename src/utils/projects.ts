@@ -38,9 +38,11 @@ export const projects: Project[] = [
     textColor: "#000000",
     tooltipHome: "Home",
     images: [
-      { id: 1, src: "/src/assets/habitomori/habitomori_01.png" },
-      { id: 2, src: "/src/assets/habitomori/habitomori_02.png" },
-      { id: 3, src: "/src/assets/habitomori/habitomori_03.png" },
+      { id: 1, src: "/src/assets/habitomori/habitomori_01.jpg" },
+      { id: 2, src: "/src/assets/habitomori/habitomori_02.jpg" },
+      { id: 3, src: "/src/assets/habitomori/habitomori_03.jpg" },
+      { id: 4, src: "/src/assets/habitomori/habitomori_04.jpg" },
+      { id: 5, src: "/src/assets/habitomori/habitomori_05.jpg" },
     ],
   },
   {
@@ -53,16 +55,14 @@ export const projects: Project[] = [
     textColor: "#000000",
     tooltipHome: "Home",
     images: [
-      { id: 1, src: "/src/assets/noclip/noclip_0.png" },
-      { id: 2, src: "/src/assets/noclip/noclip_1.jpg" },
-      { id: 3, src: "/src/assets/noclip/noclip_2.jpg" },
-      { id: 2, src: "/src/assets/noclip/noclip_3.jpg" },
-      { id: 3, src: "/src/assets/noclip/noclip_4.jpg" },
-      { id: 2, src: "/src/assets/noclip/noclip_5.jpg" },
-      { id: 3, src: "/src/assets/noclip/noclip_6.jpg" },
-      { id: 1, src: "/src/assets/noclip/noclip_7.png" },
-      { id: 1, src: "/src/assets/noclip/noclip_8.png" },
-      { id: 1, src: "/src/assets/noclip/noclip_logo.png" },
+      { id: 1, src: "/src/assets/noclip/noclip_01.jpg" },
+      { id: 2, src: "/src/assets/noclip/noclip_02.jpg" },
+      { id: 3, src: "/src/assets/noclip/noclip_03.jpg" },
+      { id: 4, src: "/src/assets/noclip/noclip_04.jpg" },
+      { id: 5, src: "/src/assets/noclip/noclip_05.jpg" },
+      { id: 6, src: "/src/assets/noclip/noclip_06.jpg" },
+      { id: 7, src: "/src/assets/noclip/noclip_07.jpg" },
+      { id: 8, src: "/src/assets/noclip/noclip_08.jpg" },
     ],
   },
   {
@@ -74,6 +74,12 @@ export const projects: Project[] = [
     color: "#44655b",
     textColor: "#ffffff",
     tooltipHome: "Home",
+    images: [
+      { id: 1, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_01.jpg" },
+      { id: 2, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_02.jpg" },
+      { id: 3, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_03.jpg" },
+      { id: 4, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_04.jpg" },
+    ],
   },
   {
     image:
@@ -109,5 +115,13 @@ export const projects: Project[] = [
     color: "#0023ff",
     textColor: "#ffffff",
     tooltipHome: "Home",
+    images: [
+      { id: 1, src: "/src/assets/quanto/quanto_01.jpg" },
+      { id: 2, src: "/src/assets/quanto/quanto_02.jpg" },
+      { id: 3, src: "/src/assets/quanto/quanto_03.jpg" },
+      { id: 4, src: "/src/assets/quanto/quanto_04.jpg" },
+      { id: 5, src: "/src/assets/quanto/quanto_05.jpg" },
+      { id: 6, src: "/src/assets/quanto/quanto_06.jpg" },
+    ],
   },
 ];
