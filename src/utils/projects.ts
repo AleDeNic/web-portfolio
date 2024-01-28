@@ -52,7 +52,14 @@ export const projects: Project[] = [
     color: "#4752ff",
     textColor: "#ffffff",
     tooltipHome: "Home",
-    images: [{ id: 1, src: "/src/assets/noclip/noclip_01.jpg" }],
+    images: [
+      { id: 1, src: "/src/assets/open-library/open-library_01.jpg" },
+      { id: 2, src: "/src/assets/open-library/open-library_02.jpg" },
+      { id: 3, src: "/src/assets/open-library/open-library_03.jpg" },
+      { id: 4, src: "/src/assets/open-library/open-library_04.jpg" },
+      { id: 5, src: "/src/assets/open-library/open-library_05.jpg" },
+      { id: 6, src: "/src/assets/open-library/open-library_06.jpg" },
+    ],
   },
   {
     image: "/src/assets/covers/noclip_cover.jpg",
