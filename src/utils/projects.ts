@@ -54,7 +54,7 @@ export const projects: Project[] = [
         course: "Interaction Design Studio • 2023",
         role: "User research • UX/UI design • prototyping",
         learned:
-          "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
+          "to do research on specific users and their needs • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
       },
     ],
   },
@@ -74,7 +74,15 @@ export const projects: Project[] = [
       { id: 5, src: "/src/assets/open-library/open-library_05.jpg" },
       { id: 6, src: "/src/assets/open-library/open-library_06.jpg" },
     ],
-    info: [{ course: "", role: "", learned: "" }],
+    info: [
+      {
+        course:
+          "Ergonomics applied to the design of usable web pages and apps • 2023-2024",
+        role: "UX/UI design • prototyping",
+        learned:
+          "To analyze the usability and accessibility of a desktop website • To design desktop wireframes and interactive prototypes • to test the redesign with users",
+      },
+    ],
   },
   {
     thumbnail: "/src/assets/covers/noclip_cover.jpg",
@@ -94,7 +102,16 @@ export const projects: Project[] = [
       { id: 7, src: "/src/assets/noclip/noclip_07.jpg" },
       { id: 8, src: "/src/assets/noclip/noclip_08.jpg" },
     ],
-    info: [{ course: "", role: "", learned: "" }],
+    info: [
+      {
+        course: "Videogame design and programming •  2022-2023",
+        role: "Game/level design • 3D art • UX/UI • music • graphic design",
+        learned:
+          "To cooperate effectively with programmers\n" +
+          " • to use development tools like GitHub\n" +
+          " • to design a videogame from start to finish",
+      },
+    ],
   },
   {
     thumbnail: "/src/assets/covers/sussurri-sepolti_cover.jpg",
@@ -110,7 +127,9 @@ export const projects: Project[] = [
       { id: 3, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_03.jpg" },
       { id: 4, src: "/src/assets/sussurri-sepolti/sussurri-sepolti_04.jpg" },
     ],
-    info: [{ course: "", role: "", learned: "" }],
+    info: [
+      { role: "Graphic design", learned: "To design posters for an event" },
+    ],
   },
   {
     thumbnail: "/src/assets/covers/everlived_cover.jpg",
@@ -130,7 +149,14 @@ export const projects: Project[] = [
       { id: 7, src: "/src/assets/everlived/everlived_07.jpg" },
       { id: 8, src: "/src/assets/everlived/everlived_08.jpg" },
     ],
-    info: [{ course: "", role: "", learned: "" }],
+    info: [
+      {
+        course: "Computer animation •  2021-2022",
+        role: "3D modeling/animation • music",
+        learned:
+          "To model, create materials and animate in Blender • to embed a video artifact with an original soundtrack",
+      },
+    ],
   },
   {
     thumbnail: "/src/assets/covers/la-superscomoda_cover.jpg",
@@ -149,7 +175,14 @@ export const projects: Project[] = [
       { id: 6, src: "/src/assets/la-superscomoda/la-superscomoda_06.jpg" },
       { id: 7, src: "/src/assets/la-superscomoda/la-superscomoda_07.jpg" },
     ],
-    info: [{ course: "", role: "", learned: "" }],
+    info: [
+      {
+        course: "Laboratorio di sintesi finale •  2021-2022",
+        role: "Brand identity • coding • 3D renders",
+        learned:
+          "To focus more on the problem, not just on the solution  • to criticize design practices using a speculative approach • to build and programme an arduino device",
+      },
+    ],
   },
   {
     thumbnail: "/src/assets/covers/quanto_cover.jpg",
@@ -167,6 +200,12 @@ export const projects: Project[] = [
       { id: 5, src: "/src/assets/quanto/quanto_05.jpg" },
       { id: 6, src: "/src/assets/quanto/quanto_06.jpg" },
     ],
-    info: [{ course: "", role: "", learned: "" }],
+    info: [
+      {
+        course: "Laboratorio di progetto della comunicazione visiva •  2021",
+        role: "2D animation • brand identity • music",
+        learned: "to design a brand identity  • to create a motion design reel",
+      },
+    ],
   },
 ];

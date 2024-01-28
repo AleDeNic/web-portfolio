@@ -50,7 +50,10 @@ const SussurriSepolti = () => {
             SUSSURRI SEPOLTI
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            Sussurri Sepolti is a theatrical play.
+            Sussurri Sepolti is a theatrical play made by Polimi's Teatro delle
+            biglie. While taking part in the play, I was asked to design the
+            posters for the show. The play had three dates in three different
+            places, so I created three variations of the same poster.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>

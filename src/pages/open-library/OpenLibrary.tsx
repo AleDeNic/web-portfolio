@@ -14,7 +14,7 @@ import { projects } from "../../utils/projects.ts";
 /*const projectInfo = [
   {
     value: "COURSE",
-    description: "Laboratorio di sintesi finale •  2021-2022",
+    description: "Ergonomics applied to the design of usable web pages and apps",
   },
   {
     value: "ROLE",
@@ -51,7 +51,13 @@ const OpenLibrary = () => {
             OPEN LIBRARY
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            textddd
+            Open Library is an open source website that has the goal to store
+            the metadata of all the books ever published. The idea is good, but
+            the website is not usable at all. So we decided to redesign it,
+            focusing on the user experience and the accessibility. Redesigning
+            the main features, like the book browsing and the metadata upload
+            process, we remade from scratch the entire visual identity and
+            design system.
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>
