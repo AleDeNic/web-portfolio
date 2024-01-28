@@ -45,6 +45,16 @@ export const projects: Project[] = [
     ],
   },
   {
+    image: "/src/assets/covers/open-library_cover.jpg",
+    path: "/open-library",
+    name: "OpenLibrary",
+    nameCaps: "OPEN LIBRARY",
+    color: "#4752ff",
+    textColor: "#ffffff",
+    tooltipHome: "Home",
+    images: [{ id: 1, src: "/src/assets/noclip/noclip_01.jpg" }],
+  },
+  {
     image: "/src/assets/covers/noclip_cover.jpg",
     path: "/noclip",
     name: "Noclip",

@@ -11,16 +11,6 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-/**
- * The Habitomori component displays a page with a title, a text and a grid of colored divs.
- * TODO: Change the text and the divs.
- * @component
- * @example
- * return (
- *   <Habitomori />
- * )
- */
-
 const projectInfo = [
   {
     value: "COURSE",
@@ -71,7 +61,12 @@ const Quanto = () => {
       </Grid.Col>
       <Grid.Col span={8} pl={"5vw"}>
         <ScrollArea h={"85vh"} type={"never"}>
-          <Tooltip.Floating label={"SCROLL"} radius={rem(24)} color={"#9880ff"}>
+          <Tooltip.Floating
+            label={"SCROLL"}
+            radius={rem(24)}
+            color={"#0171fa"}
+            style={{ color: "#ffffff" }}
+          >
             <Grid p={0} style={{ cursor: "none" }}>
               {projects
                 .find((project) => project.name === "Quanto")

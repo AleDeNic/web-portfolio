@@ -14,21 +14,19 @@ import { projects } from "../../utils/projects.ts";
 const projectInfo = [
   {
     value: "COURSE",
-    description: "Videogame design and programming •  2022-2023",
+    description: "Laboratorio di sintesi finale •  2021-2022",
   },
   {
     value: "ROLE",
-    description: "Game/level design • 3D art • UX/UI • music • graphic design",
+    description: "Brand identity • coding • 3D renders",
   },
   {
     value: "WHAT DID I LEARN?",
     description:
-      "To cooperate effectively with programmers\n" +
-      " • to use development tools like GitHub\n" +
-      " • to design a videogame from start to finish",
+      "To focus more on the problem, not just on the solution  • to criticize design practices using a speculative approach • to build and programme an arduino device",
   },
 ];
-const Noclip = () => {
+const OpenLibrary = () => {
   const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
@@ -50,16 +48,10 @@ const Noclip = () => {
               fontSize: rem(24),
             }}
           >
-            NOCLIP
+            OPEN LIBRARY
           </Text>
           <Text ta={"left"} pb={rem(32)}>
-            NOCLIP is an experimental 3D videogame that challenges the usual way
-            of designing and solving puzzles, being a fist-person platformer in
-            which the player has to complete the puzzles by “noclipping” through
-            the map to see invisible and intangible objects. UX has beed
-            designed to guarantee an enjoyable experience also to non-players,
-            while UI, music and graphics have been designed to give a retro vibe
-            to the game aesthetics.
+            textddd
           </Text>
           <Accordion defaultValue={"Course"}>{accordionItems}</Accordion>
         </Flex>
@@ -69,12 +61,12 @@ const Noclip = () => {
           <Tooltip.Floating
             label={"SCROLL"}
             radius={rem(24)}
-            color={"#99f0fe"}
-            style={{ color: "#000000" }}
+            color={"#4752ff"}
+            style={{ color: "#ffffff" }}
           >
             <Grid p={0} style={{ cursor: "none" }}>
               {projects
-                .find((project) => project.name === "Noclip")
+                .find((project) => project.name === "OpenLibrary")
                 ?.images?.map((image) => (
                   <Grid.Col
                     key={image.id}
@@ -92,4 +84,4 @@ const Noclip = () => {
   );
 };
 
-export default Noclip;
+export default OpenLibrary;

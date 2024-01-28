@@ -7,6 +7,7 @@ import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
 import Projects from "./pages/landing-page/Projects.tsx";
 import Habitomori from "./pages/habitomori/Habitomori.tsx";
+import OpenLibrary from "./pages/open-library/OpenLibrary.tsx";
 import Noclip from "./pages/noclip/Noclip.tsx";
 import SussurriSepolti from "./pages/sussurri-sepolti/SussurriSepolti.tsx";
 import Everlived from "./pages/everlived/Everlived.tsx";
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/habitomori",
         element: <Habitomori />,
+      },
+      {
+        path: "/open-library",
+        element: <OpenLibrary />,
       },
       {
         path: "/noclip",

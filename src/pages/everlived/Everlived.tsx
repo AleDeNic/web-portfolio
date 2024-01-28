@@ -62,7 +62,12 @@ const Everlived = () => {
       </Grid.Col>
       <Grid.Col span={8} pl={"5vw"}>
         <ScrollArea h={"85vh"} type={"never"}>
-          <Tooltip.Floating label={"SCROLL"} radius={rem(24)} color={"#9880ff"}>
+          <Tooltip.Floating
+            label={"SCROLL"}
+            radius={rem(24)}
+            color={"#586be3"}
+            style={{ color: "#ffffff" }}
+          >
             <Grid p={0} style={{ cursor: "none" }}>
               {projects
                 .find((project) => project.name === "Everlived") // Find the Everlived project
