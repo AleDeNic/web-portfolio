@@ -11,16 +11,6 @@ import {
 
 import { projects } from "../../utils/projects.ts";
 
-/**
- * The Habitomori component displays a page with a title, a text and a grid of colored divs.
- * TODO: Change the text and the divs.
- * @component
- * @example
- * return (
- *   <Habitomori />
- * )
- */
-
 const projectInfo = [
   {
     value: "COURSE",
@@ -36,7 +26,7 @@ const projectInfo = [
       "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
   },
 ];
-const Habitomori = () => {
+const Everlived = () => {
   const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
@@ -58,7 +48,7 @@ const Habitomori = () => {
               fontSize: rem(24),
             }}
           >
-            HABITOMORI
+            EVERLIVED
           </Text>
           <Text ta={"left"} pb={rem(32)}>
             HABITOMORI is the only application made for hikikomoris. It helps
@@ -80,7 +70,7 @@ const Habitomori = () => {
           <Tooltip.Floating label={"SCROLL"} radius={rem(24)} color={"#9880ff"}>
             <Grid p={0} style={{ cursor: "none" }}>
               {projects
-                .find((project) => project.name === "Habitomori") // Find the Everlived project
+                .find((project) => project.name === "Everlived") // Find the Everlived project
                 ?.images?.map((image) => (
                   <Grid.Col
                     key={image.id}
@@ -98,4 +88,4 @@ const Habitomori = () => {
   );
 };
 
-export default Habitomori;
+export default Everlived;

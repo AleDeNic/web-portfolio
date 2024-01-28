@@ -7,6 +7,11 @@ import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
 import Projects from "./pages/landing-page/Projects.tsx";
 import Habitomori from "./pages/habitomori/Habitomori.tsx";
+import Noclip from "./pages/noclip/Noclip.tsx";
+import SussurriSepolti from "./pages/sussurri-sepolti/SussurriSepolti.tsx";
+import Everlived from "./pages/everlived/Everlived.tsx";
+import LaSuperscomoda from "./pages/la-superscomoda/LaSuperscomoda.tsx";
+import Quanto from "./pages/quanto/Quanto.tsx";
 
 /**
  * This is the entry point of the application.
@@ -34,23 +39,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/noclip",
-        element: <div>Noclip</div>,
+        element: <Noclip />,
       },
       {
         path: "/sussurri-sepolti",
-        element: <div>Sussurri Sepolti</div>,
+        element: <SussurriSepolti />,
       },
       {
         path: "/everlived",
-        element: <div>Everlived</div>,
+        element: <Everlived />,
       },
       {
         path: "/la-superscomoda",
-        element: <div>La Superscomoda</div>,
+        element: <LaSuperscomoda />,
       },
       {
         path: "/quanto",
-        element: <div>Quanto</div>,
+        element: <Quanto />,
       },
     ],
   },

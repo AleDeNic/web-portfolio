@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, rem, Tooltip, Image, Group } from "@mantine/core";
+import { Container, rem, Tooltip, Image, Flex } from "@mantine/core";
 import { useEffect } from "react";
 
 /**
@@ -23,7 +23,13 @@ const App = () => {
 
   return (
     <>
-      <Group bg={"#ffffff"} justify={"space-between"} px={"10vw"} w={rem(500)}>
+      <Flex
+        bg={"#ffffff"}
+        justify={"space-between"}
+        px={"10vw"}
+        h={"15vh"}
+        align={"center"}
+      >
         <Tooltip.Floating label="HOME" radius={rem(50)}>
           <Image
             onClick={() => navigate("/projects")}
@@ -33,12 +39,20 @@ const App = () => {
             src={"/src/assets/ADN_logo.svg"}
             alt={"random"}
             fit={"contain"}
-            h={"auto"}
+            h={"inherit"}
             w={"auto"}
           />
         </Tooltip.Floating>
-      </Group>
-      <Container fluid w={"120rem"} bg={"#ffffff"} p={0}>
+        <Tooltip.Floating label="CONTACT" radius={rem(50)}>
+          <a
+            href={"mailto:alessio1.denicolo@mail.polimi.it"}
+            style={{ cursor: "none", textDecoration: "none", color: "#000000" }}
+          >
+            alessio1.denicolo@mail.polimi.it
+          </a>
+        </Tooltip.Floating>
+      </Flex>
+      <Container fluid w={"120rem"} bg={"#ffffff"} p={0} h={"85vh"}>
         <Outlet />
       </Container>
     </>

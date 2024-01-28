@@ -5,7 +5,6 @@ import {
   Grid,
   ScrollArea,
   Container,
-  Button,
   Group,
   Collapse,
   Text,
@@ -74,7 +73,7 @@ const Projects = () => {
   };
 
   return (
-    <Box>
+    <Box h={"100%"}>
       <Container fluid px={"10vw"}>
         <Group
           justify="left"
@@ -103,7 +102,7 @@ const Projects = () => {
           </Text>
         </Collapse>
       </Container>
-      <ScrollArea h={"84vh"} type={"never"} viewportRef={viewport}>
+      <ScrollArea h={"80.3vh"} type={"never"} viewportRef={viewport}>
         <Grid gutter={rem(0)}>
           {projects.map((project) => (
             <Grid.Col
@@ -131,24 +130,28 @@ const Projects = () => {
             </Grid.Col>
           ))}
         </Grid>
-        <Container p={rem(20)}>
+        <Container w={"100%"} h={"12vh"} px={0}>
           <Tooltip.Floating
             label={"TO THE TOP"}
             radius={rem(24)}
             color={"#000000"}
           >
-            <Button
+            <Text
               onClick={scrollToTop}
+              px={0}
               style={{
+                fontSize: rem(48),
                 color: "#000000",
                 backgroundColor: "#ffffff",
                 cursor: "none",
                 height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
-              size={"xl"}
             >
               ↑
-            </Button>
+            </Text>
           </Tooltip.Floating>
         </Container>
       </ScrollArea>

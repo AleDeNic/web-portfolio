@@ -36,7 +36,7 @@ const projectInfo = [
       "to do research on specific users and their needs  • to develop solutions while considering techical limitations • to design wireframes and Figma interactive mockups",
   },
 ];
-const Habitomori = () => {
+const Noclip = () => {
   const accordionItems = projectInfo.map((item) => (
     <Accordion.Item key={item.value} value={item.value}>
       <Accordion.Control>{item.value}</Accordion.Control>
@@ -58,7 +58,7 @@ const Habitomori = () => {
               fontSize: rem(24),
             }}
           >
-            HABITOMORI
+            NOCLIP
           </Text>
           <Text ta={"left"} pb={rem(32)}>
             HABITOMORI is the only application made for hikikomoris. It helps
@@ -80,7 +80,7 @@ const Habitomori = () => {
           <Tooltip.Floating label={"SCROLL"} radius={rem(24)} color={"#9880ff"}>
             <Grid p={0} style={{ cursor: "none" }}>
               {projects
-                .find((project) => project.name === "Habitomori") // Find the Everlived project
+                .find((project) => project.name === "Noclip") // Find the Everlived project
                 ?.images?.map((image) => (
                   <Grid.Col
                     key={image.id}
@@ -98,4 +98,4 @@ const Habitomori = () => {
   );
 };
 
-export default Habitomori;
+export default Noclip;
