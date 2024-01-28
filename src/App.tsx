@@ -36,7 +36,7 @@ const App = () => {
             style={{
               cursor: "none",
             }}
-            src={"/src/assets/ADN_logo.svg"}
+            src={"/assets/ADN_logo.svg"}
             alt={"random"}
             fit={"contain"}
             h={"inherit"}

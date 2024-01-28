@@ -108,7 +108,7 @@ const Projects = () => {
             <Grid.Col
               span={12}
               h={"35vh"}
-              key={project.thumbnail}
+              key={project?.thumbnail}
               style={{
                 backgroundColor: "#ffffff",
               }}
@@ -120,7 +120,7 @@ const Projects = () => {
                 c={project.textColor}
               >
                 <Image
-                  src={project.thumbnail}
+                  src={project?.thumbnail}
                   onClick={() => navigate(project.path)}
                   radius={rem(0)}
                   style={{ cursor: "none", height: "100%" }}
